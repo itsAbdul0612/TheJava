@@ -1,0 +1,30 @@
+* JDK (Java Development Kit)... it contains tools like debugger, javac, etc and libraries which are essential to develop a java program.
+
+* JDK also contains JRE (Java Runtime Environment) in which comes JVM (Java Virtual Machine), The program finally runs in JVM.
+--------------------------------------------------
+
+------ hierarchy ------
+
+JDK
+ └── JRE
+      └── JVM
+-----------------------
+
+* JIT (Just In Time) compiler is a part of JVM, it converts the frequently executed code so the execution becomes much faster after the warm-up
+--------------------------------------------------
+
+* Life Cycle of a Program:
+The .java file is compiled by javac (compiler) ----> into a bytecode (platform independent) ----> which is then interpreted (line by line) by JVM Interpreter into Machine Code (platform dependent).
+
+1. The .java source file is compiled by javac (Java Compiler).
+2. The compiler converts it into bytecode (.class file), which is platform independent.
+3. The JVM loads this bytecode.
+4. The Interpreter initially executes the bytecode instruction by instruction.
+5. When or if the JVM detects frequently executed code (hotspots), the JIT compiler compiles that bytecode into native machine code for faster execution.
+
+* Throughout the execution the JVM handles Garbage Collection by reclaiming memory from unused objects.
+--------------------------------------------------
+
+------ Write Once, Run Anywhere ------
+
+This Architecture of Java enable its write once and run anywhere capability since the bytecode being platform independent can be run anywhere via a compatible JVM.
