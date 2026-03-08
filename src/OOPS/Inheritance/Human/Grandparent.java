@@ -2,17 +2,18 @@ package OOPS.Inheritance.Human;
 
 public class Grandparent {
 
+    // Parameterised Constructor
     public Grandparent(String name, int age){
         this.name = name;
         this.age = age;
-        System.out.println("Grand Parent's Constructor Called. ");
+        System.out.println("Grand Parents Constructor Called.");
     }
 
     private boolean hasSuperpowers = false;
     private String name;
     private int age;
 
-    public boolean isHasSuperpowers() {
+    public boolean hasSuperpowers() {
         return hasSuperpowers;
     }
 
