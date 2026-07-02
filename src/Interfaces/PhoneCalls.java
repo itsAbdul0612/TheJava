@@ -1,4 +1,4 @@
-package interfaces;
+package Interfaces;
 
 public interface PhoneCalls {
     public void makeCall(String s);

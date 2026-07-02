@@ -1,4 +1,4 @@
-package interfaces;
+package Interfaces;
 
 public class Device implements Camera, MusicPlayer, PhoneCalls{
     @Override

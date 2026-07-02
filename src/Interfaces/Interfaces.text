@@ -1,0 +1,1 @@
+An Interface in java is a blueprint for a class. It specifies a set of methods that a class must implements if it implements the interface. Interfaces helps achieve multiple inheritance and abstraction.

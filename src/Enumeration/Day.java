@@ -9,16 +9,16 @@ public enum Day {
     FRIDAY("Friday", "Shaniwar"),
     SATURDAY("Saturday", "Raviwar");
 
-  private String lower;
+  private String English;
   private String hindi;
 
-    Day(String lower, String hindi){
-        this.lower = lower;
-        this.hindi = hindi;
+    Day(String English, String Hindi){
+        this.English = English;
+        this.hindi = Hindi;
     }
 
-    public String getLower() {
-        return lower;
+    public String getEnglish() {
+        return English;
     }
 
     public String getHindi() {

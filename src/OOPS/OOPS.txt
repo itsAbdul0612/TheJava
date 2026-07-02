@@ -4,14 +4,16 @@ iN OOPS (Object-Oriented Programming System) we deal with classes and objects, t
 
     Encapsulation is bundling of data AND behavior in a single unit which is often a class. This unit also hides the internal state of the data from the outside world and only exposes a controlled interface for interacting with it. This prevents any accidental modification of Data and allows easier maintenance and modification of code.
 
-2. Inheritance - Reuse Code;
+2. Inheritance - Reuse Code:
 
-    Inheritance let one class (child class) inherit properties from other class (parent class), this promotes code reusability, helps build hierarchy and reduce duplication. Example: Class BankAccount is extended by Class SavingsAccount, as savings account is a type of bank account it will have the properties from a normal bank account (from BankAccount Class) as well as its own exclusive properties.
+    Inheritance let one class (child class) inherit properties from other class (parent class), this promotes code reusability, helps build hierarchy and reduce duplication. Example: Class BankAccount is extended by Class SavingsAccount, as savings account is a type of bank account it will have the properties of a normal bank account (from BankAccount Class) as well as its own exclusive properties.
 
-3. Polymorphism:
+3. Polymorphism - Method Overloading/Overriding:
 
     Polymorphism in Java means methods with same name can behave differently. It has two types...
-        1. Method Overloading: methods with same name having different method signature (no. of parameters, name).
-        2. Method Overriding: methods with same name behaving differently, Example an inherited method doing something other than what it does in the parent class.
+        1. Compile Time Polymorphism: Methods with same name, same function differing in method signature. It is simply achieved via Method Overloading.
+        2. Runtime Polymorphism: Methods with same name differing in behavior. We can achieve it with Method Overriding, and we can demonstrate it in inheritance as well.
 
-4. Abstraction
+4. Abstraction - Hide Internal Details:
+
+    Abstraction is about hiding how things works and showing what they do. You make an abstract method without and body and define that method in a concrete class. so abstract class works as a blueprint for other classes who implements it.

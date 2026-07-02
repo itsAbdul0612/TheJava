@@ -8,7 +8,7 @@ public class MethodOverLoading {
         System.out.println(sum(10.0, 10.0, 10.0));
 
     }
-
+    // Compile Time Polymorphism.
     public static int sum(int a, int b){
         return a+b;
     }

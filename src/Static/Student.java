@@ -6,6 +6,9 @@ public class Student {
     public Student(){
         count++;
     }
+    public static void getCount(){
+        System.out.println(count);
+    }
 
     private int roll;
     private String name;

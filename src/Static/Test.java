@@ -9,6 +9,7 @@ public class Test {
         Student student5 = new Student();
 
         System.out.println(Student.count);
+        Student.getCount();
 
     }
 }

@@ -1,4 +1,4 @@
-* JDK (Java Development Kit)... it contains tools like debugger, javac, etc and libraries which are essential to develop a java program.
+* JDK (Java Development Kit)... it contains tools like debugger, javac, etc. and libraries which are essential to develop a Java program.
 
 * JDK also contains JRE (Java Runtime Environment) in which comes JVM (Java Virtual Machine), The program finally runs in JVM.
 --------------------------------------------------

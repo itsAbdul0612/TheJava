@@ -2,51 +2,39 @@ package OOPS.Polymorphism;
 
 public class MethodOverRiding {
     public static void main(String[] args) {
-        iPhone13 phone = new iPhone13();
 
-        phone.setPhoneNumber(853066981);
-        phone.setPrimaryLens("Primary Lens");
+        //Dynamic Method Dispatch or UpCasting
+        /*
+        It is called "Dynamic Method Dispatch" because the method to be executed is chosen at runtime, It happens when the reference is of parent class, object is of child class and the method is overridden.
+        Java then decides the method to be executed at runtime. It shines when different objects behaves differently but shares the same interface
+        */
+        Payment payment = new PaymentViaUPI();
+        payment.pay();
 
-        phone.call();
-        phone.camera();
-        phone.sms();
-    }
+        Payment payment_ = new PaymentViaCard();
+        payment_.pay();
+
+  }
 }
-class MobilePhone{
-    public void call(){
-        System.out.println("Calling...");
-    }
-
-    public void sms(){
-        System.out.println("Texting...");
-    }
-
-    public void camera(){
-        System.out.println("Clicking Picture...");
+class Payment{
+    public void pay(){
+        System.out.println("Payment Mechanism");
     }
 }
 
-class iPhone13 extends MobilePhone{
+class PaymentViaUPI extends Payment{
 
-   private int phoneNumber;
-   private String primaryLens;
+    @Override
+    public void pay(){
+        System.out.println("Payment Via UPI");
+    }
+}
 
-    public void call(){
-        System.out.println("Calling... "+phoneNumber);
+class PaymentViaCard extends Payment{
+
+    @Override
+    public void pay(){
+        System.out.println("Payment Via Card");
     }
 
-    public void sms(){
-        System.out.println("Texting... "+phoneNumber);
-    }
-
-    public void camera(){
-        System.out.println("Clicking Picture with "+ primaryLens);
-    }
-
-    public void setPhoneNumber(int phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-    public void setPrimaryLens(String primaryLens) {
-        this.primaryLens = primaryLens;
-    }
 }
